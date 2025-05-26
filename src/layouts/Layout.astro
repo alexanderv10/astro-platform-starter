@@ -14,6 +14,13 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{title}</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preload" as="font" type="font/woff2" href={interWoff2} crossorigin />
 <!-- Hotjar Tracking Code for  -->
 <script>
     (function(h,o,t,j,a,r){
@@ -25,13 +32,6 @@ const { title } = Astro.props;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{title}</title>
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="preload" as="font" type="font/woff2" href={interWoff2} crossorigin />
     </head>
     <body class="antialiased text-white bg-complementary">
         <div class="flex flex-col min-h-screen px-6 bg-noise sm:px-12">
